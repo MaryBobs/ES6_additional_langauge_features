@@ -47,4 +47,4 @@ class Library {
 
 };
 
-module.exports = Library;
+export {Library};
