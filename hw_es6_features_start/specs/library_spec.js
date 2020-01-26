@@ -39,5 +39,6 @@ describe('Library', function () {
     ];
     library.addBooks(books);
     assert.strictEqual(library.bookCount(), 3);
+    library.printInventory();
   });
 });

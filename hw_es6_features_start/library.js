@@ -39,11 +39,15 @@ class Library {
   newBooks.forEach(book => this.books.push(book));
 };
 
+  // printInventory() {
+  // this.books.forEach((book) => {
+  //   console.log(`${book.title} by ${book.author}`);
+  // });
+
   printInventory() {
-  this.books.forEach((book) => {
-    console.log(`${book.title} by ${book.author}`);
-  });
-};
+    for (const {title: title, author: author} of this.books)
+    console.log(`${title} by ${author}`);
+  };
 
 };
 
